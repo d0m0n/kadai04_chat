@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 20px;
+  color: #534945;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2em;
+}
+
+body{
+  background-color: #fbf3e4;
+}
+
+.animal {
+  display: table;
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+#tanuki {
+  color: white;
+  background-color: darkolivegreen;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  border-radius: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#tanuki:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+#kitsune {
+  color: white;
+  background-color: darkred;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  border-radius: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#kitsune:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+#overlayTanuki {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(85, 107, 47, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#overlayKitsune {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(139, 0, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 500px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  margin: 0 auto 50px;
+  display: block;
+  resize: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #534945;
+}
+
+button {
+  border: 2px solid;
+  border-color: #534945;
+  border-radius: 30px;
+  background-color: white;
+  padding: 2px 24px;
+  margin: 0 auto;
+  display: block;
+  color: #534945;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover {
+  border-color: #534945;
+  background-color: white;
+  color: #534945;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+button:active,
+button:focus {
+  border-color: #534945;
+  background-color: #534945;
+  color: white;
+  transform: translateY(1px);
+}
+
+#output {
+  width: 500px;
+  display: block;
+  height: 500px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* チャットの吹き出し */
+.icon {
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.iconKitsune {
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: auto;
+}
+
+.balloonTanuki {
+  display: flex;
+  background-color: darkolivegreen;
+  width: fit-content;
+  max-width: 400px;
+  border-radius: 48px;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+
+.balloonKitsune {
+  display: flex;
+  background-color: darkred;
+  width: fit-content;
+  max-width: 400px;
+  border-radius: 48px;
+  padding: 6px;
+  margin-bottom: 6px;
+  margin-left: auto;
+}
+
+.name {
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 12px;
+  margin-bottom: 4px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.text {
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  margin-left: 12px;
+  margin-right: 12px;
+}
